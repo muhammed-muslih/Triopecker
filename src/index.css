@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #8b5e3c;
+  --color-accent: #c9a77d;
+  --color-bg: #faf8f6;
+  --color-surface: #ffffff;
+  --color-text: #2e2e2e;
+  --color-muted: #6b6b6b;
+  --color-edge: #e9ddd0;
+  --color-dark: #4a2e1b;
+  --color-link: #a97148;
+}
+
+body {
+  @apply bg-bg text-text;
+}
+
+@layer components {
+  .sub-menu {
+    @apply absolute top-[4.2rem] rounded-xl shadow-lg backdrop-blur-md border border-edge/50;
+    @apply bg-surface/80;
+  }
+  .btn {
+    @apply bg-brand text-surface
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center;
+  }
+
+  .flex-center-between {
+    @apply flex items-center justify-between;
+  }
+}
