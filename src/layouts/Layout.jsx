@@ -1,4 +1,5 @@
 import { Navbar } from "../components";
+import HomePage from "../pages/HomePage";
 
 const Layout = () => {
   return (
@@ -11,7 +12,9 @@ const Layout = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 pt-16"></main>
+      <main className="flex-1 pt-16">
+        <HomePage />
+      </main>
     </div>
   );
 };

@@ -19,12 +19,8 @@ const MobileMenu = ({ Menus }) => {
         {isOpen ? <X className="size-7" /> : <Menu className="size-7" />}
       </button>
       <motion.div
-        initial={{ opacity: 0, x: "-100%", scale: 0.97 }}
-        animate={
-          isOpen
-            ? { opacity: 1, x: 0, scale: 1 }
-            : { opacity: 0, x: "-100%", scale: 0.97 }
-        }
+        initial={{ opacity: 0, x: "-100%" }}
+        animate={isOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: "-100%" }}
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
         className="fixed left-0 right-0 top-16 overflow-y-auto h-full bg-surface backdrop-blur-md p-6 font-bold"
       >

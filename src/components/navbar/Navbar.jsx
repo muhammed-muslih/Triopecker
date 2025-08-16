@@ -1,4 +1,4 @@
-import Logo from "../../assets/triopecker-logo.png";
+import Logo from "../../assets/logo/triopecker-logo.png";
 import { Menus } from "../../constants/menu";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";

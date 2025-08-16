@@ -16,13 +16,17 @@ body {
   @apply bg-bg text-text;
 }
 
+::selection {
+  @apply bg-brand text-surface;
+}
+
 @layer components {
   .sub-menu {
     @apply absolute top-[4.2rem] rounded-xl shadow-lg backdrop-blur-md border border-edge/50;
     @apply bg-surface/80;
   }
   .btn {
-    @apply bg-brand text-surface
+    @apply bg-brand text-surface;
   }
 }
 
