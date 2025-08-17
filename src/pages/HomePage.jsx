@@ -1,5 +1,4 @@
-import { HeroSection } from "../components";
-import ServicesSection from "../components/sevices/ServicesSection";
+import { HeroSection, ServicesSection, WhyChooseUs } from "../components";
 
 const HomePage = () => {
   return (
@@ -7,9 +6,13 @@ const HomePage = () => {
       {/* Full-width hero */}
       <HeroSection />
 
-      {/* Constrained sections */}
-      <section className="w-full max-w-[1440px] mx-auto px-4 py-16">
+      {/* service section */}
+      <section className="w-full max-w-[1440px] mx-auto px-4 pt-16">
         <ServicesSection />
+      </section>
+
+      <section className="w-full max-w-[1440px] mx-auto px-4 py-16">
+        <WhyChooseUs />
       </section>
     </>
   );

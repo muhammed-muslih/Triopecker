@@ -12,6 +12,8 @@ import {
   Cog,
   BarChart2,
   Layout,
+  Lightbulb,
+  Handshake,
 } from "lucide-react";
 import technologyServies from "../assets/service/technology-services.png";
 import advertisingServies from "../assets/service/advertising-services.png";
@@ -164,4 +166,27 @@ export const advertisingMarketing = {
 export const homeServiceSectionData = [
   technologySolutions,
   advertisingMarketing,
+];
+
+export const ourValues = [
+  {
+    icon: Lightbulb,
+    title: "Innovation First",
+    desc: "Always ahead with the latest tech trends to future-proof your business.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Scalable & Flexible",
+    desc: "Solutions built to adapt and grow alongside your business needs.",
+  },
+  {
+    icon: Handshake,
+    title: "Trusted by Clients",
+    desc: "Proven track record of delivering impactful solutions across industries.",
+  },
+  {
+    icon: Wrench,
+    title: "End-to-End Support",
+    desc: "From concept to deployment and beyond—we’ve got you covered.",
+  },
 ];
