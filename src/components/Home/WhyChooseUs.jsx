@@ -4,7 +4,6 @@ import { useRef } from "react";
 
 const WhyChooseUs = () => {
   const sectionRef = useRef(null);
-
   const isInView = useInView(sectionRef);
 
   return (
@@ -18,7 +17,7 @@ const WhyChooseUs = () => {
               : { opacity: 0, y: 75 }
           }
           exit={{ opacity: 0, y: 75 }}
-          className="text-3xl md:text-4xl font-bold text-text mb-4 capitalize"
+          className="text-3xl md:text-4xl font-bold text-dark mb-4 capitalize"
         >
           Why Choose Us
         </motion.h2>
@@ -50,7 +49,7 @@ const WhyChooseUs = () => {
             }}
             key={val.title}
             className="flex flex-col items-center text-center p-8 bg-surface rounded-2xl shadow-lg 
-            transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer group/card"
+            transition-transform duration-300 hover:scale-105  cursor-pointer group/card"
           >
             <span
               className="p-4 rounded-xl bg-accent/20 text-accent mb-6 group-hover/card:bg-brand

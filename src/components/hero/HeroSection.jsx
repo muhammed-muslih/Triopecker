@@ -65,7 +65,7 @@ const HeroSection = () => {
     timerRef.current = setInterval(() => {
       setCurrent((p) => (p + 1) % heroImages.length);
       setLoaded(false);
-    }, 6000);
+    }, 5000);
   };
 
   const handlePrev = () => {

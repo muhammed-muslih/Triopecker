@@ -190,3 +190,10 @@ export const ourValues = [
     desc: "From concept to deployment and beyond—we’ve got you covered.",
   },
 ];
+
+export const testimonials = [
+  "We create technology solutions that grow alongside your business, ensuring long-term scalability and adaptability.",
+  "Our approach combines creativity and technical expertise to deliver systems that are both efficient and reliable.",
+  "From concept to deployment, we focus on results-driven solutions that make a real impact.",
+  "We embrace innovation and emerging technologies to keep your business ahead of the curve.",
+];

@@ -19,7 +19,7 @@ const ServicesSection = () => {
               : { opacity: 0, y: 75 }
           }
           exit={{ opacity: 0, y: 75 }}
-          className="text-3xl md:text-4xl text-text font-bold mb-4 capitalize"
+          className="text-3xl md:text-4xl text-dark font-bold mb-4 capitalize"
         >
           Our Services
         </motion.h2>
