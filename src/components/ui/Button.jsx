@@ -22,7 +22,7 @@ const Button = ({
       onClick={onClick}
       initial={false}
       whileHover={{
-        scale: 1,
+        scale: 1.01,
         boxShadow: "0px 8px 24px rgba(0,0,0,0.25)",
         transition: {
           type: "spring",
