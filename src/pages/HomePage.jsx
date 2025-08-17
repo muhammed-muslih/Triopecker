@@ -1,4 +1,5 @@
 import { HeroSection } from "../components";
+import ServicesSection from "../components/sevices/ServicesSection";
 
 const HomePage = () => {
   return (
@@ -7,9 +8,9 @@ const HomePage = () => {
       <HeroSection />
 
       {/* Constrained sections */}
-      {/* <section className="w-full max-w-[1440px] mx-auto px-4 py-16">
-        <AboutSection />
-      </section> */}
+      <section className="w-full max-w-[1440px] mx-auto px-4 py-16">
+        <ServicesSection />
+      </section>
     </>
   );
 };

@@ -1,4 +1,4 @@
 import Navbar from "./navbar/Navbar";
-import HeroSection from "./Hero/HeroSection";
+import HeroSection from "./hero/HeroSection";
 
 export { Navbar, HeroSection };
