@@ -2,11 +2,15 @@ import Logo from "../../assets/logo/triopecker-logo.png";
 import { Menus } from "../../constants/menu";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
+import Button from "../ui/Button";
+import ConsultationModal from "../modal/ConsultationModal";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isModalOpen, setModalIsOpen] = useState(false);
   return (
     <nav className="flex-center-between w-full">
-      <div className="flex items-center gap-x-0 z-[999] relative">
+      <div className="flex items-center gap-x-0 z-[50] relative">
         <img src={Logo} alt="logo" className="size-20 lg:size-24" />
         <h3 className="text-md lg:text-lg font-bold uppercase text-brand">
           Triopecker
@@ -21,13 +25,22 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="flex-center gap-x-4">
-        <button className="btn z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center font-medium  md:font-semibold text-xs md:text-sm cursor-pointer capitalize">
-          Get a Quote
-        </button>
+        <Button
+          variant="primary"
+          onClick={() => setModalIsOpen(true)}
+          className="w-fit"
+          customStyle="z-[50] relative px-3 py-1.5 rounded-xl flex-center font-medium shadow md:font-semibold text-xs md:text-sm cursor-pointer capitalize"
+        >
+          Get Started
+        </Button>
         <div className="lg:hidden">
           <MobileMenu Menus={Menus} />
         </div>
       </div>
+      <ConsultationModal
+        isOpen={isModalOpen}
+        onClose={() => setModalIsOpen(false)}
+      />
     </nav>
   );
 };

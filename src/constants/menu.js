@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import technologyServies from "../assets/service/technology-services.png";
 import advertisingServies from "../assets/service/advertising-services.png";
+import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export const Menus = [
   {
@@ -197,3 +198,18 @@ export const testimonials = [
   "From concept to deployment, we focus on results-driven solutions that make a real impact.",
   "We embrace innovation and emerging technologies to keep your business ahead of the curve.",
 ];
+
+export const footerMenu = [
+  { title: "Home", href: "" },
+  { title: "About", href: "" },
+  { title: "Portfolio", href: "" },
+  { title: "Blog", href: "" },
+  { title: "Contact", href: "" },
+];
+
+export const footerServices = [
+  { title: "Software Development", href: "" },
+  { title: "Advertising & Marketing", href: "" },
+];
+
+export const footerIcon = [FaLinkedin, FaGithub, FaInstagram, FaWhatsapp];

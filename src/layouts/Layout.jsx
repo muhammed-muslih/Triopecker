@@ -1,4 +1,4 @@
-import { Navbar } from "../components";
+import { Navbar, Footer } from "../components";
 import HomePage from "../pages/HomePage";
 
 const Layout = () => {
@@ -12,9 +12,22 @@ const Layout = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 pt-16">
+      <main className="flex-1 ">
         <HomePage />
       </main>
+
+      <footer className="bg-surface z-50 shadow-2xl border-t border-edge backdrop-blur-lg">
+        <div className="w-full max-w-[1440px] mx-auto px-4 pt-8">
+          <div>
+            <Footer />
+          </div>
+          <div className="border-t border-edge mt-8">
+            <p className="text-center text-xs py-6 text-muted">
+              © 2025 Triopecker. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

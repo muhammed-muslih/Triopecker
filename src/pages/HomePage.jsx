@@ -3,26 +3,34 @@ import {
   ServicesSection,
   WhyChooseUs,
   TestimonialsSection,
+  CallToAction,
 } from "../components";
 
 const HomePage = () => {
   return (
     <>
       {/* Full-width hero */}
-      <HeroSection /> 
+      <div className="w-full max-w-[2592px] mx-auto">
+        <HeroSection />
+      </div>
+      <div className="w-full max-w-[1440px] mx-auto px-4 flex flex-col gap-16 py-16">
+        {/* service section */}
+        <section>
+          <ServicesSection />
+        </section>
 
-      {/* service section */}
-      <section className="w-full max-w-[1440px] mx-auto px-4 pt-16">
-        <ServicesSection />
-      </section>
+        <section>
+          <WhyChooseUs />
+        </section>
 
-      <section className="w-full max-w-[1440px] mx-auto px-4 pt-16">
-        <WhyChooseUs />
-      </section>
+        <section>
+          <TestimonialsSection />
+        </section>
 
-      <section className="w-full max-w-[1440px] mx-auto px-4 py-16">
-        <TestimonialsSection />
-      </section>
+        <section>
+          <CallToAction />
+        </section>
+      </div>
     </>
   );
 };

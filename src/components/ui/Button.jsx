@@ -6,14 +6,16 @@ const Button = ({
   type = "button",
   variant = "primary",
   className = "",
+  customStyle = "",
 }) => {
-  const baseClasses =
-    "px-8 py-3 md:px-10 md:py-4 text-sm lg:text-base rounded-2xl cursor-pointer font-semibold tracking-wide relative overflow-hidden";
+  const defaultStyle =
+    "px-8 py-3 md:px-10 md:py-4 text-sm lg:text-base rounded-2xl cursor-pointer font-semibold tracking-wide relative overflow-hidden hover:shadow-xl";
 
   const variants = {
     primary:
-      "bg-gradient-to-r from-[var(--color-dark)] to-[var(--color-accent)] text-surface shadow-lg",
-    secondary: "bg-brand text-surface hover:bg-gray-200 shadow",
+      "bg-gradient-to-r from-[var(--color-dark)] via-[var(--color-brand)] to-[var(--color-accent)] text-surface shadow-lg",
+    secondary:
+      "bg-white/60 backdrop-blur-md text-[var(--color-dark)] border border-[var(--color-edge)] hover:bg-[var(--color-accent)] hover:text-surface",
   };
 
   return (
@@ -39,7 +41,9 @@ const Button = ({
           damping: 20,
         },
       }}
-      className={`${baseClasses} ${variants[variant]} ${className}`}
+      className={`${customStyle || defaultStyle} ${variants[variant] || ""} ${
+        className || ""
+      }`}
     >
       {children}
       {/* Glow effect layer */}

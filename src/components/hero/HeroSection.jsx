@@ -81,7 +81,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex-center justify-center ">
+    <section className="relative h-[100vh] overflow-hidden flex-center justify-center ">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
