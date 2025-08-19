@@ -7,6 +7,7 @@ import HeroBg6 from "../../assets/hero/hero-bg-6.png";
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, spring } from "motion/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router";
 
 const heroImages = [
   {
@@ -45,6 +46,7 @@ const HeroSection = () => {
   const [current, setCurrent] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const timerRef = useRef(null);
+  const navigate = useNavigate();
 
   // Preload all images
   useEffect(() => {
@@ -156,6 +158,7 @@ const HeroSection = () => {
                       mass: 1,
                     },
                   }}
+                  onClick={() => navigate("/services")}
                   className="px-8 py-3 md:px-10 md:py-4 text-lg rounded-2xl 
                   bg-gradient-to-r from-[var(--color-dark)] to-[var(--color-accent)] text-surface
                  shadow-lg opacity-90 hover:opacity-75 transition cursor-pointer"

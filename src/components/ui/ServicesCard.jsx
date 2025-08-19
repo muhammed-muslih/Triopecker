@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-const ServicesCard = ({ service }) => {
+const ServicesCard = ({ service, onclick, btnTitle }) => {
   return (
     <div
       className="flex flex-col bg-surface rounded-2xl shadow-lg overflow-hidden h-full 
@@ -30,8 +30,8 @@ const ServicesCard = ({ service }) => {
             </li>
           ))}
         </ul>
-        <Button variant="primary" className="w-fit">
-          Explore Technology Services
+        <Button variant="primary" className="w-fit" onClick={onclick}>
+          Explore <span>{btnTitle}</span>
         </Button>
       </div>
     </div>

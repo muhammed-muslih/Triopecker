@@ -26,7 +26,7 @@ const CallToAction = () => {
               : { opacity: 0, y: 75 }
           }
           exit={{ opacity: 0, y: 75 }}
-          className="text-3xl md:text-4xl text-dark font-bold mb-4 capitalize"
+          className="text-2xl sm:text-3xl lg:text-4xl  text-dark font-bold mb-4 capitalize"
         >
           Ready to Build the Future with Triopecker?
         </motion.h2>
@@ -44,7 +44,7 @@ const CallToAction = () => {
           vision.
         </motion.p>
       </div>
-      <div className="flex-center justify-center gap-4">
+      <div className="flex-center justify-center gap-6 flex-col md:flex-row">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}

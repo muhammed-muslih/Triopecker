@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useInView, spring, stagger } from "motion/react";
 import { useNavigate } from "react-router";
 
-const ServicesSection = () => {
+const Services = () => {
   const serviceSectionRef = useRef(null);
   const navigate = useNavigate();
   const isInView = useInView(serviceSectionRef);
@@ -22,7 +22,7 @@ const ServicesSection = () => {
           exit={{ opacity: 0, y: 75 }}
           className="text-2xl sm:text-3xl lg:text-4xl  text-dark font-bold mb-4 capitalize"
         >
-          Our Services
+          Building Scalable Software & Impactful Marketing Solutions
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 50 }}
@@ -32,10 +32,10 @@ const ServicesSection = () => {
               : { opacity: 0, y: 50 }
           }
           exit={{ opacity: 0, y: 50 }}
-          className="text-base md:text-lg text-muted max-w-2xl mx-auto"
+          className="text-base md:text-lg text-muted max-w-3xl mx-auto"
         >
-          From cutting-edge technology to impactful marketing, we provide
-          end-to-end solutions that help businesses grow.
+          Triopecker delivers technology and marketing that grow with your
+          business. Explore our services tailored for startups and enterprises.
         </motion.p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -54,8 +54,6 @@ const ServicesSection = () => {
             exit={{ opacity: 0, scale: 0.8 }}
             key={service.name}
           >
-            {console.log(service.name)}
-
             <ServicesCard
               service={service}
               btnTitle={service.name}
@@ -68,4 +66,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default Services;

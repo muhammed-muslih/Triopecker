@@ -1,5 +1,5 @@
 import { Navbar, Footer } from "../components";
-import HomePage from "../pages/HomePage";
+import { Outlet } from "react-router";
 
 const Layout = () => {
   return (
@@ -12,11 +12,11 @@ const Layout = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 ">
-        <HomePage />
+      <main className="">
+        <Outlet />
       </main>
 
-      <footer className="bg-surface z-50 shadow-2xl border-t border-edge backdrop-blur-lg">
+      <footer className="bg-surface z-50 shadow-2xl border-t border-edge backdrop-blur-lg max-w-[2592px]">
         <div className="w-full max-w-[1440px] mx-auto px-4 pt-8">
           <div>
             <Footer />

@@ -5,12 +5,17 @@ import MobileMenu from "./MobileMenu";
 import Button from "../ui/Button";
 import ConsultationModal from "../modal/ConsultationModal";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 const Navbar = () => {
   const [isModalOpen, setModalIsOpen] = useState(false);
+  const navigate = useNavigate();
   return (
     <nav className="flex-center-between w-full">
-      <div className="flex items-center gap-x-0 z-[50] relative">
+      <div
+        onClick={() => navigate("/")}
+        className="flex items-center gap-x-0 z-[50] relative cursor-pointer"
+      >
         <img src={Logo} alt="logo" className="size-20 lg:size-24" />
         <h3 className="text-md lg:text-lg font-bold uppercase text-brand">
           Triopecker

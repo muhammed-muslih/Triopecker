@@ -1,12 +1,16 @@
 import Logo from "../../assets/logo/triopecker-logo.png";
-import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { footerMenu, footerServices, footerIcon } from "../../constants/menu";
+import { Link, useNavigate } from "react-router";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
       <div className="col-span-2">
-        <div className="flex items-center gap-x-0 z-[50] relative">
+        <div
+          onClick={() => navigate("/")}
+          className="flex items-center gap-x-0 z-[50] relative cursor-pointer"
+        >
           <img src={Logo} alt="logo" className="size-20 lg:size-24" />
           <h3 className="text-md lg:text-lg font-bold uppercase text-brand">
             Triopecker
@@ -25,9 +29,12 @@ const Footer = () => {
         <ul className="space-y-2 text-sm text-dark">
           {footerMenu.map((menu) => (
             <li key={menu.title}>
-              <a className="hover:text-accent transition-colors cursor-pointer hover:underline">
+              <Link
+                to={menu.href}
+                className="hover:text-accent transition-colors cursor-pointer hover:underline"
+              >
                 {menu.title}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -38,9 +45,12 @@ const Footer = () => {
         <ul className="space-y-2 text-sm text-dark">
           {footerServices.map((service) => (
             <li key={service.title}>
-              <a className="hover:text-accent transition-colors cursor-pointer hover:underline">
+              <Link
+                to={service.href}
+                className="hover:text-accent transition-colors cursor-pointer hover:underline"
+              >
                 {service.title}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

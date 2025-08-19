@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { motion, spring, stagger } from "motion/react";
+import { NavLink } from "react-router";
 
 const DesktopMenu = ({ menu, index }) => {
   const [isHover, setIsHover] = useState(false);
@@ -32,7 +33,7 @@ const DesktopMenu = ({ menu, index }) => {
         transition={createTransition(index)}
       >
         <span className="flex-center gap-0.5 cursor-pointer px-4 py-1 rounded-xl hover:bg-accent/20 font-semibold capitalize">
-          {menu.name}
+          <NavLink to={!hasSubMenu && menu.link}> {menu.name}</NavLink>
           {hasSubMenu && (
             <ChevronDown className="mt-[0.8px] text-dark group-hover/link:rotate-180 duration-200 transition-transform" />
           )}

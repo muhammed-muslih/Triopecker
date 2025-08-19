@@ -14,17 +14,35 @@ import {
   Layout,
   Lightbulb,
   Handshake,
+  Rocket,
+  Users,
+  Zap,
 } from "lucide-react";
 import technologyServies from "../assets/service/technology-services.png";
 import advertisingServies from "../assets/service/advertising-services.png";
-import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+  FaWhatsapp,
+  FaCode,
+  FaMobileAlt,
+  FaBullhorn,
+  FaPaintBrush,
+  FaRocket,
+  FaLock,
+  FaUsers,
+  FaChartLine,
+} from "react-icons/fa";
 
 export const Menus = [
   {
     name: "Home",
+    link: "/",
   },
   {
     name: "About",
+    link: "/about",
   },
   {
     name: "Services",
@@ -32,32 +50,37 @@ export const Menus = [
     submenu: [
       // Under "Software Development"
       {
-        heading: "Software Development",
+        heading: "Technology Solutions",
         items: [
           {
             name: "Web Development",
             desc: "Custom websites and web applications",
             icon: Globe,
+            link: "/",
           },
           {
             name: "Mobile App Development",
             desc: "iOS, Android, and cross-platform apps",
             icon: Smartphone,
+            link: "/",
           },
           {
             name: "UI/UX Design",
             desc: "User-friendly and modern interface design",
             icon: Palette,
+            link: "/",
           },
           {
             name: "Cloud Solutions",
             desc: "Scalable cloud hosting and integrations",
             icon: Cloud,
+            link: "/",
           },
           {
             name: "Maintenance",
             desc: "Ongoing support and updates",
             icon: Wrench,
+            link: "/",
           },
         ],
       },
@@ -69,21 +92,25 @@ export const Menus = [
             name: "Digital Marketing",
             desc: "SEO, SEM, and social media campaigns",
             icon: TrendingUp,
+            link: "/",
           },
           {
             name: "Creative & Branding",
             desc: "Logos, brand identity, and design assets",
             icon: Sparkles,
+            link: "/",
           },
           {
             name: "Campaigns",
             desc: "Targeted online and offline advertising",
             icon: Target,
+            link: "/",
           },
           {
             name: "Video Production",
             desc: "Promotional videos and animations",
             icon: Video,
+            link: "/",
           },
         ],
       },
@@ -91,24 +118,28 @@ export const Menus = [
   },
   {
     name: "Portfolio",
+    link: "/",
   },
   {
     name: "Blog",
+    link: "/",
   },
   {
     name: "Contact",
+    link: "/",
   },
 ];
 
 export const technologySolutions = {
   name: "Technology Solutions",
   image: technologyServies,
+  link: "/services/technology-solutions",
   items: [
-    {
-      name: "Software Development",
-      desc: "Custom software solutions tailored to your business needs",
-      icon: Laptop,
-    },
+    // {
+    //   name: "Software Development",
+    //   desc: "Custom software solutions tailored to your business needs",
+    //   icon: Laptop,
+    // },
     {
       name: "Web Development",
       desc: "Responsive and modern websites that convert visitors",
@@ -140,6 +171,7 @@ export const technologySolutions = {
 export const advertisingMarketing = {
   name: " Advertising & Marketing",
   image: advertisingServies,
+  link: "/services/advertising-marketing",
   items: [
     {
       name: "Digital Marketing",
@@ -200,16 +232,85 @@ export const testimonials = [
 ];
 
 export const footerMenu = [
-  { title: "Home", href: "" },
-  { title: "About", href: "" },
-  { title: "Portfolio", href: "" },
-  { title: "Blog", href: "" },
-  { title: "Contact", href: "" },
+  { title: "Home", href: "/" },
+  { title: "About", href: "/about" },
+  { title: "Portfolio", href: "/" },
+  { title: "Blog", href: "/" },
+  { title: "Contact", href: "/" },
 ];
 
 export const footerServices = [
-  { title: "Software Development", href: "" },
-  { title: "Advertising & Marketing", href: "" },
+  { title: "All Services", href: "/services" },
+  { title: "Technology Solutions", href: "/technology-solutions" },
+  { title: "Advertising & Marketing", href: "/" },
 ];
 
 export const footerIcon = [FaLinkedin, FaGithub, FaInstagram, FaWhatsapp];
+
+export const whyChooseUs = [
+  {
+    title: "Full-Service Approach",
+    desc: "Software, design, cloud, and marketing under one roof for a seamless digital strategy.",
+    icon: Globe,
+  },
+  {
+    title: "Startup-Friendly",
+    desc: "Affordable, scalable solutions tailored to help startups grow without limits.",
+    icon: Rocket,
+  },
+  {
+    title: "Global Outlook",
+    desc: "We deliver international-level quality with performance-driven results.",
+    icon: Users,
+  },
+  {
+    title: "Passion for Impact",
+    desc: "We don’t just aim for completion; we aim for transformation and long-term success.",
+    icon: Zap,
+  },
+];
+
+export const featuredServices = [
+  {
+    icon: FaCode,
+    title: "Web Development",
+    desc: "Custom websites and web applications",
+  },
+  {
+    icon: FaMobileAlt,
+    title: "Mobile Apps",
+    desc: "iOS, Android, and cross-platform apps",
+  },
+  {
+    icon: FaPaintBrush,
+    title: "Creative & Branding",
+    desc: "Logos, brand identity, and design assets",
+  },
+  {
+    icon: FaBullhorn,
+    title: "Digital Marketing",
+    desc: "SEO, SEM, and social media campaigns",
+  },
+];
+export const features = [
+  {
+    title: "Scalable & Secure",
+    icon: FaLock,
+    desc: "We build systems designed to grow with your business, backed by strong security.",
+  },
+  {
+    title: "Cutting-Edge Tech",
+    icon: FaRocket,
+    desc: "We leverage the latest technologies to ensure modern and future-ready solutions.",
+  },
+  {
+    title: "User-Focused",
+    icon: FaUsers,
+    desc: "Our design-first approach ensures intuitive and engaging digital experiences.",
+  },
+  {
+    title: "Data-Driven",
+    icon: FaChartLine,
+    desc: "We use insights and analytics to create solutions that deliver measurable results.",
+  },
+];

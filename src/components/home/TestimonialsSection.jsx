@@ -20,7 +20,7 @@ const TestimonialsSection = () => {
               : { opacity: 0, y: 75 }
           }
           exit={{ opacity: 0, y: 75 }}
-          className="text-3xl md:text-4xl font-bold text-dark mb-4"
+          className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-dark mb-4"
         >
           Trusted Technology, Built for You
         </motion.h2>
@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
               stiffness: 150,
               damping: 20,
             }}
-            className="relative flex flex-col items-center text-center p-8 bg-surface rounded-2xl shadow-lg
+            className="relative flex flex-col items-center text-center p-8 bg-surface rounded-2xl shadow hover:shadow-lg
             transition-transform duration-300 hover:scale-105 cursor-pointer group/card"
           >
             <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-[var(--color-dark)] to-[var(--color-accent)] rounded-t-2xl"></div>
