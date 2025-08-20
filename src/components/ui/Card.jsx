@@ -22,7 +22,7 @@ const Card = ({ isInView = true, index, title, Icon, desc, link = "" }) => {
         damping: 20,
       }}
       className="flex flex-col items-center text-center p-8 bg-surface rounded-2xl shadow hover:shadow-lg
-            transition-transform duration-300 hover:scale-105  cursor-pointer group/card"
+            transition-transform duration-300 hover:scale-105 cursor-pointer group/card"
     >
       <span
         className="p-4 rounded-xl bg-accent/20 text-accent mb-6 group-hover/card:bg-brand

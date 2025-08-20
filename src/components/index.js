@@ -21,6 +21,8 @@ import ScrollToTop from "./ui/ScrollToTop";
 import AdvertisingMarketing from "./sevices/AdvertisingMarketing";
 import FAQAccordion from "./sevices/FAQAccordion";
 import ServiceDetail from "./sevices/ServiceDetail";
+import PortfolioHero from "./Portfolio/PortfolioHero";
+import PortfolioExpectations from "./Portfolio/PortfolioExpectations";
 
 export {
   Navbar,
@@ -46,4 +48,6 @@ export {
   AdvertisingMarketing,
   FAQAccordion,
   ServiceDetail,
+  PortfolioHero,
+  PortfolioExpectations,
 };

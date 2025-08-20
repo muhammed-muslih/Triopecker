@@ -31,6 +31,9 @@ import {
   FaLock,
   FaUsers,
   FaChartLine,
+  FaLaptopCode,
+  FaPalette,
+  FaDraftingCompass,
 } from "react-icons/fa";
 import technologyServies from "../assets/service/technology-services.png";
 import advertisingServies from "../assets/service/advertising-services.png";
@@ -44,6 +47,10 @@ import brandingImg from "../assets/service/branding.png";
 import campaignsImg from "../assets/service/campaigns.png";
 import videoImg from "../assets/service/video-production.png";
 
+import portfolioImg1 from "../assets/portfolio/portfolio-concept1.png";
+import portfolioImg2 from "../assets/portfolio/portfolio-concept2.png";
+import portfolioImg3 from "../assets/portfolio/portfolio-concept3.png";
+
 export const Menus = [
   {
     name: "Home",
@@ -55,7 +62,7 @@ export const Menus = [
   },
   {
     name: "Services",
-    link:"/services",
+    link: "/services",
     subMenuHeading: ["Software Development", "Advertising & Marketing"],
     submenu: [
       // Under "Software Development"
@@ -129,10 +136,6 @@ export const Menus = [
   {
     name: "Portfolio",
     link: "/portfolio",
-  },
-  {
-    name: "Blog",
-    link: "/blog",
   },
   {
     name: "Contact",
@@ -315,7 +318,6 @@ export const footerMenu = [
   { title: "Home", href: "/" },
   { title: "About", href: "/about" },
   { title: "Portfolio", href: "/" },
-  { title: "Blog", href: "/" },
   { title: "Contact", href: "/" },
 ];
 
@@ -415,5 +417,46 @@ export const faqs = [
   {
     title: "How do you ensure quality and security?",
     desc: "We follow best practices in code reviews, automated testing, and security audits to deliver safe, high-quality solutions.",
+  },
+];
+
+export const concepts = [
+  {
+    title: "Modern Web App Concept",
+    desc: "A scalable SaaS dashboard concept showing our design and engineering approach.",
+    img: portfolioImg1,
+  },
+  {
+    title: "Mobile App UI",
+    desc: "A sleek, user-friendly mobile app design crafted as a concept showcase.",
+    img: portfolioImg2,
+  },
+  {
+    title: "Branding & Marketing Visuals",
+    desc: "Concept branding materials and campaign creatives for startups.",
+    img: portfolioImg3,
+  },
+];
+
+export const expectations = [
+  {
+    title: "Web Development",
+    desc: "Custom websites, SaaS platforms, and e-commerce solutions built for scalability.",
+    icon: FaLaptopCode,
+  },
+  {
+    title: "Mobile Applications",
+    desc: "Engaging iOS, Android, and cross-platform apps with smooth performance.",
+    icon: FaMobileAlt,
+  },
+  {
+    title: "Branding & Marketing",
+    desc: "Creative campaigns, visual identity, and digital marketing assets.",
+    icon: FaPalette,
+  },
+  {
+    title: "UI/UX Design",
+    desc: "User-focused, modern, and accessible product experiences.",
+    icon: FaDraftingCompass,
   },
 ];

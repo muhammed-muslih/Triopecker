@@ -4,6 +4,7 @@ import Services from "./Services";
 import TechnologySolutions from "./TechnologySolutions";
 import AdvertisingMarketing from "./AdvertisingMarketing";
 import SingleService from "./SingleService";
+import Portfolio from "./Portfolio";
 
 export {
   Home,
@@ -12,4 +13,5 @@ export {
   TechnologySolutions,
   AdvertisingMarketing,
   SingleService,
+  Portfolio,
 };

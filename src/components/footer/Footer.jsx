@@ -72,9 +72,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <p className="font-bold text-dark p-2 bg-accent/20 rounded-lg text-center">
-          hello@triopecker.com
-        </p>
+        <p className="font-semibold text-brand">hello@triopecker.com</p>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import {
   TechnologySolutions,
   AdvertisingMarketing,
   SingleService,
+  Portfolio,
 } from "../pages";
 
 const appRouter = createBrowserRouter([
@@ -28,6 +29,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/services/:slug",
         element: <SingleService />,
+      },
+      {
+        path: "/portfolio",
+        element: <Portfolio />,
       },
     ],
   },
