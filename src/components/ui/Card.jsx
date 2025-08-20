@@ -1,8 +1,17 @@
 import { motion, stagger, spring } from "motion/react";
+import { useNavigate } from "react-router";
 
-const Card = ({ isInView = true, index, title, Icon, desc }) => {
+const Card = ({ isInView = true, index, title, Icon, desc, link = "" }) => {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    if (link) {
+      navigate(link);
+    }
+  };
+
   return (
     <motion.div
+      onClick={handleNavigate}
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       exit={{ opacity: 0, y: 40 }}

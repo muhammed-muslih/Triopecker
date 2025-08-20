@@ -1,9 +1,9 @@
-import { features } from "../../constants/menu";
-import Card from "../ui/Card";
+import { faqs } from "../../constants/menu";
+import Accordion from "../ui/Accordion";
 import { useInView, motion } from "motion/react";
 import { useRef } from "react";
 
-const OurAdvantage = () => {
+const FAQAccordion = () => {
   const sectionRef = useRef();
   const isInView = useInView(sectionRef, { once: true });
   return (
@@ -18,21 +18,13 @@ const OurAdvantage = () => {
         exit={{ opacity: 0, y: 50 }}
         className="text-xl sm:text-2xl lg:text-3xl font-bold mb-8 text-dark capitalize text-center"
       >
-        The <span className="text-brand">Triopecker </span>Advantage
+        FAQs
       </motion.h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {features?.map((feature, index) => (
-          <Card
-            key={feature.title}
-            index={index}
-            isInView={isInView}
-            Icon={feature.icon}
-            title={feature.title}
-            desc={feature.desc}
-          />
-        ))}
+      <div className="w-full">
+        <Accordion data={faqs} isInView={isInView} />
       </div>
     </div>
   );
 };
-export default OurAdvantage;
+
+export default FAQAccordion;

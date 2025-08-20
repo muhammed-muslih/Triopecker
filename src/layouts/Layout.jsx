@@ -1,9 +1,10 @@
-import { Navbar, Footer } from "../components";
+import { Navbar, Footer, ScrollToTop } from "../components";
 import { Outlet } from "react-router";
 
 const Layout = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       {/* Fixed Header */}
       <header className="bg-surface text-[15px] fixed top-0 left-0 right-0 z-50 shadow">
         <div className="w-full max-w-[1440px] mx-auto px-4 h-16 text-dark flex-center">
@@ -16,7 +17,7 @@ const Layout = () => {
         <Outlet />
       </main>
 
-      <footer className="bg-surface z-50 shadow-2xl border-t border-edge backdrop-blur-lg max-w-[2592px]">
+      <footer className="bg-surface z-25 shadow-2xl border-t border-edge backdrop-blur-lg max-w-[2592px]">
         <div className="w-full max-w-[1440px] mx-auto px-4 pt-8">
           <div>
             <Footer />

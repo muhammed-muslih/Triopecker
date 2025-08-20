@@ -5,7 +5,7 @@ import Card from "../ui/Card";
 
 const FeaturedServices = () => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef);
+  const isInView = useInView(sectionRef, { once: true });
 
   return (
     <div className="w-full" ref={sectionRef}>
@@ -41,12 +41,13 @@ const FeaturedServices = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {featuredServices.map((service, index) => (
           <Card
-            key={service.name}
+            key={service.title}
             index={index}
             isInView={isInView}
             Icon={service.icon}
             title={service.title}
             desc={service.desc}
+            link={service.link}
           />
         ))}
       </div>

@@ -11,9 +11,9 @@ const process = [
 
 const OurProcess = () => {
   const sectionRef = useRef();
-  const isInView = useInView(sectionRef);
+  const isInView = useInView(sectionRef, { once: true });
   return (
-    <div className="px-6 max-w-6xl mx-auto" ref={sectionRef}>
+    <div className="px-6 mx-auto" ref={sectionRef}>
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         animate={
@@ -26,7 +26,7 @@ const OurProcess = () => {
       >
         Our Process
       </motion.h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mx-auto">
         {process.map((step, i) => (
           <motion.div
             initial={{ opacity: 0, y: 40 }}

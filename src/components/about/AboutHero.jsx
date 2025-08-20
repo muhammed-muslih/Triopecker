@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 const AboutHero = () => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef);
+  const isInView = useInView(sectionRef, { once: true });
   return (
     <div className="w-full text-center" ref={sectionRef}>
       <motion.h2

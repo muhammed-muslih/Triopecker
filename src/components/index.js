@@ -17,6 +17,10 @@ import TechnologySolutionsSection from "./sevices/TechnologySolutionsSection";
 import Card from "./ui/Card";
 import OurAdvantage from "./sevices/OurAdvantage";
 import OurProcess from "./sevices/OurProcess";
+import ScrollToTop from "./ui/ScrollToTop";
+import AdvertisingMarketing from "./sevices/AdvertisingMarketing";
+import FAQAccordion from "./sevices/FAQAccordion";
+import ServiceDetail from "./sevices/ServiceDetail";
 
 export {
   Navbar,
@@ -38,4 +42,8 @@ export {
   Card,
   OurAdvantage,
   OurProcess,
+  ScrollToTop,
+  AdvertisingMarketing,
+  FAQAccordion,
+  ServiceDetail,
 };

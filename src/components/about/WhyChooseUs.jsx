@@ -5,7 +5,7 @@ import Card from "../ui/Card";
 
 const WhyChooseUs = () => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef);
+  const isInView = useInView(sectionRef, { once: true });
 
   return (
     <div className="w-full " ref={sectionRef}>

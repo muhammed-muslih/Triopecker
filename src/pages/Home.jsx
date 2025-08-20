@@ -5,6 +5,7 @@ import {
   TestimonialsSection,
   CallToAction,
   WhyChooseUs,
+  FeaturedServices,
 } from "../components";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
         <ServicesSection />
         <CoreValues />
         <WhyChooseUs />
+        <FeaturedServices />
         <TestimonialsSection />
         <CallToAction />
       </div>

@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 const TestimonialsSection = () => {
   const testimonialSectionRef = useRef(null);
-  const isInView = useInView(testimonialSectionRef);
+  const isInView = useInView(testimonialSectionRef, { once: true });
 
   return (
     <div className="w-full" ref={testimonialSectionRef}>

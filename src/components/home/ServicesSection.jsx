@@ -7,7 +7,7 @@ import { useNavigate } from "react-router";
 const ServicesSection = () => {
   const serviceSectionRef = useRef(null);
   const navigate = useNavigate();
-  const isInView = useInView(serviceSectionRef);
+  const isInView = useInView(serviceSectionRef, { once: true });
 
   return (
     <div className="w-full" ref={serviceSectionRef}>
@@ -54,8 +54,6 @@ const ServicesSection = () => {
             exit={{ opacity: 0, scale: 0.8 }}
             key={service.name}
           >
-            {console.log(service.name)}
-
             <ServicesCard
               service={service}
               btnTitle={service.name}

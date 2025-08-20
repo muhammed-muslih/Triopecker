@@ -6,7 +6,7 @@ import ConsultationModal from "../modal/ConsultationModal";
 const CallToAction = () => {
   const [isModalOpen, setModalIsOpen] = useState(false);
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef);
+  const isInView = useInView(sectionRef, { once: true });
 
   const createTransition = (index) => ({
     delay: stagger(0.3, { start: 0.2 })(index),
@@ -28,7 +28,8 @@ const CallToAction = () => {
           exit={{ opacity: 0, y: 75 }}
           className="text-2xl sm:text-3xl lg:text-4xl  text-dark font-bold mb-4 capitalize"
         >
-          Ready to Build the Future with Triopecker?
+          Ready to Build the Future with{" "}
+          <span className="text-brand">Triopecker </span>?
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 50 }}

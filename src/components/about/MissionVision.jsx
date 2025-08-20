@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 const MissionVision = () => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef);
+  const isInView = useInView(sectionRef, { once: true });
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12" ref={sectionRef}>
       <div>

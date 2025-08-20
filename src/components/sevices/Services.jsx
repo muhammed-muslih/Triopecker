@@ -7,7 +7,7 @@ import { useNavigate } from "react-router";
 const Services = () => {
   const serviceSectionRef = useRef(null);
   const navigate = useNavigate();
-  const isInView = useInView(serviceSectionRef);
+  const isInView = useInView(serviceSectionRef,{ once: true });
 
   return (
     <div className="w-full" ref={serviceSectionRef}>
