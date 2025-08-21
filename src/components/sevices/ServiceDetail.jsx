@@ -3,6 +3,7 @@ import { motion, useInView, spring, stagger } from "motion/react";
 import { useParams, useNavigate } from "react-router";
 import { servicesDetailData } from "../../constants/menu";
 import Button from "../ui/Button";
+import Error from "../common/Error";
 
 const ServiceDetail = () => {
   const { slug } = useParams();
@@ -18,7 +19,12 @@ const ServiceDetail = () => {
     damping: 20,
   });
 
-  if (!service) return <p className="text-center py-20">Service not found.</p>;
+  if (!service)
+    return (
+      <p className="text-center font-medium py-20 animate-pulse text-dark">
+        Service not found.
+      </p>
+    );
 
   const Icon = service.icon;
 

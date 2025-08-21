@@ -1,11 +1,9 @@
 import { concepts } from "../../constants/menu";
 import { useRef } from "react";
 import { motion, useInView, spring, stagger } from "motion/react";
-import { useNavigate } from "react-router";
 
 const PortfolioHero = () => {
   const sectionRef = useRef(null);
-  const navigate = useNavigate();
   const isInView = useInView(sectionRef, { once: true });
 
   return (

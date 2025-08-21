@@ -8,6 +8,8 @@ import {
   AdvertisingMarketing,
   SingleService,
   Portfolio,
+  Contact,
+  Error,
 } from "../pages";
 
 const appRouter = createBrowserRouter([
@@ -26,14 +28,10 @@ const appRouter = createBrowserRouter([
         path: "/services/advertising-marketing",
         element: <AdvertisingMarketing />,
       },
-      {
-        path: "/services/:slug",
-        element: <SingleService />,
-      },
-      {
-        path: "/portfolio",
-        element: <Portfolio />,
-      },
+      { path: "/services/:slug", element: <SingleService /> },
+      { path: "/portfolio", element: <Portfolio /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "*", element: <Error message="Page not found!" /> },
     ],
   },
 ]);

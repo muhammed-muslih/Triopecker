@@ -5,6 +5,8 @@ import TechnologySolutions from "./TechnologySolutions";
 import AdvertisingMarketing from "./AdvertisingMarketing";
 import SingleService from "./SingleService";
 import Portfolio from "./Portfolio";
+import Contact from "./Contact";
+import Error from "./Error";
 
 export {
   Home,
@@ -14,4 +16,6 @@ export {
   AdvertisingMarketing,
   SingleService,
   Portfolio,
+  Contact,
+  Error,
 };

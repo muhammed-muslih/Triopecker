@@ -72,7 +72,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <p className="font-semibold text-brand">hello@triopecker.com</p>
+        <p className="font-semibold text-brand">triopecker@gmail.com</p>
       </div>
     </div>
   );

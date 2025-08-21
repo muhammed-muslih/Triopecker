@@ -23,6 +23,9 @@ import FAQAccordion from "./sevices/FAQAccordion";
 import ServiceDetail from "./sevices/ServiceDetail";
 import PortfolioHero from "./Portfolio/PortfolioHero";
 import PortfolioExpectations from "./Portfolio/PortfolioExpectations";
+import ContactHero from "./contact/ContactHero";
+import ContactForm from "./contact/ContactForm";
+import Error from "./common/Error";
 
 export {
   Navbar,
@@ -50,4 +53,7 @@ export {
   ServiceDetail,
   PortfolioHero,
   PortfolioExpectations,
+  ContactHero,
+  ContactForm,
+  Error,
 };

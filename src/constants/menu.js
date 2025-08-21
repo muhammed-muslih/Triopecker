@@ -317,14 +317,14 @@ export const testimonials = [
 export const footerMenu = [
   { title: "Home", href: "/" },
   { title: "About", href: "/about" },
-  { title: "Portfolio", href: "/" },
-  { title: "Contact", href: "/" },
+  { title: "Portfolio", href: "/portfolio" },
+  { title: "Contact", href: "/contact" },
 ];
 
 export const footerServices = [
   { title: "All Services", href: "/services" },
   { title: "Technology Solutions", href: "/services/technology-solutions" },
-  { title: "Advertising & Marketing", href: "/" },
+  { title: "Advertising & Marketing", href: "/services/advertising-marketing" },
 ];
 
 export const footerIcon = [FaLinkedin, FaGithub, FaInstagram, FaWhatsapp];
