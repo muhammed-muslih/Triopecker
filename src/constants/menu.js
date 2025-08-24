@@ -17,6 +17,7 @@ import {
   Rocket,
   Users,
   Zap,
+  ShoppingCart,
 } from "lucide-react";
 import {
   FaLinkedin,
@@ -34,6 +35,7 @@ import {
   FaLaptopCode,
   FaPalette,
   FaDraftingCompass,
+  FaShoppingCart,
 } from "react-icons/fa";
 import technologyServies from "../assets/service/technology-services.png";
 import advertisingServies from "../assets/service/advertising-services.png";
@@ -46,6 +48,8 @@ import digitalImg from "../assets/service/digital-marketing.png";
 import brandingImg from "../assets/service/branding.png";
 import campaignsImg from "../assets/service/campaigns.png";
 import videoImg from "../assets/service/video-production.png";
+import ecommerceImg from "../assets/service/e-commerce.png";
+
 
 import portfolioImg1 from "../assets/portfolio/portfolio-concept1.png";
 import portfolioImg2 from "../assets/portfolio/portfolio-concept2.png";
@@ -80,6 +84,12 @@ export const Menus = [
             desc: "iOS, Android, and cross-platform apps",
             icon: Smartphone,
             link: "/services/mobile-app-development",
+          },
+          {
+            name: "E-commerce Development",
+            desc: "Custom online stores and shopping platforms",
+            icon: ShoppingCart,
+            link: "/services/ecommerce-development",
           },
           {
             name: "UI/UX Design",
@@ -161,6 +171,12 @@ export const technologySolutions = {
       link: "/services/mobile-app-development",
     },
     {
+      name: "E-commerce Development",
+      desc: "Custom online stores with payment integration and scalability",
+      icon: ShoppingCart,
+      link: "/services/ecommerce-development",
+    },
+    {
       name: "UI/UX Design",
       desc: "Intuitive and attractive interfaces for seamless experiences",
       icon: Palette,
@@ -232,6 +248,13 @@ export const servicesDetailData = {
     para: "Our mobile apps are built for performance and usability. We focus on intuitive interfaces, smooth interactions, and scalable architectures to ensure your app grows with your user base.",
     icon: Smartphone,
     image: mobileImg,
+  },
+  "ecommerce-development": {
+    title: "E-commerce Development",
+    desc: "Custom online stores designed to boost sales and user experience.",
+    para: "We build scalable and secure e-commerce platforms with seamless payment integration, intuitive product catalogs, and optimized checkout flows. Our solutions help businesses grow their online presence and maximize conversions.",
+    icon: ShoppingCart,
+    image: ecommerceImg,
   },
   "ui-ux-design": {
     title: "UI/UX Design",
@@ -448,6 +471,11 @@ export const expectations = [
     title: "Mobile Applications",
     desc: "Engaging iOS, Android, and cross-platform apps with smooth performance.",
     icon: FaMobileAlt,
+  },
+  {
+    title: "E-commerce Development",
+    desc: "Online stores with secure payments, seamless checkout, and scalability.",
+    icon: FaShoppingCart,
   },
   {
     title: "Branding & Marketing",

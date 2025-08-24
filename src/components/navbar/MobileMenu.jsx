@@ -27,7 +27,7 @@ const MobileMenu = ({ Menus }) => {
         initial={{ opacity: 0, x: "-100%" }}
         animate={isOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: "-100%" }}
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-        className="fixed left-0 right-0 top-16 overflow-y-auto h-full bg-surface backdrop-blur-md p-6 font-bold"
+        className="fixed left-0 right-0 top-16 overflow-y-auto bg-surface backdrop-blur-md p-6 font-bold h-[calc(100vh-4rem)]"
       >
         <ul className="space-y-2">
           {Menus?.map(({ name, link, submenu }, i) => {
