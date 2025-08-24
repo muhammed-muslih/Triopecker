@@ -139,7 +139,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="mt-6 flex-center justify-center"
               >
-                <Button variant="secondary" className="w-fit">
+                <Button variant="secondary" className="w-fit" onClick={()=>navigate('/services')}>
                   Our Services
                 </Button>
               </motion.div>
