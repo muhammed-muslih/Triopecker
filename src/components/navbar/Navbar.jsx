@@ -17,7 +17,7 @@ const Navbar = () => {
         className="flex items-center gap-x-0 z-[50] relative cursor-pointer"
       >
         <img src={Logo} alt="logo" className="size-20 lg:size-24" />
-        <h3 className="text-md lg:text-lg font-bold uppercase text-brand">
+        <h3 className="text-md lg:text-lg font-bold uppercase text-brand tracking-widest">
           Triopecker
         </h3>
       </div>

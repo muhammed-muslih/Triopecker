@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -10,10 +11,14 @@
   --color-edge: #e9ddd0;
   --color-dark: #4a2e1b;
   --color-link: #a97148;
+
+  --font-sans: "Inter", sans-serif;
+  --font-brand: "Poppins", sans-serif;
 }
 
 body {
   @apply bg-bg text-text;
+  @apply font-sans;
 }
 
 ::selection {
@@ -37,5 +42,23 @@ body {
 
   .flex-center-between {
     @apply flex items-center justify-between;
+  }
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-brand;
+  }
+
+  p,
+  span,
+  li,
+  a {
+    @apply font-sans;
   }
 }

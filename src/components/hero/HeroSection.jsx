@@ -8,6 +8,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, spring } from "motion/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router";
+import Button from "../ui/Button";
 
 const heroImages = [
   {
@@ -138,33 +139,9 @@ const HeroSection = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="mt-6 flex-center justify-center"
               >
-                <motion.button
-                  initial={false}
-                  whileHover={{
-                    scale: 1.03,
-                    transition: {
-                      type: spring,
-                      stiffness: 400,
-                      damping: 20,
-                      mass: 0.7,
-                    },
-                  }}
-                  whileTap={{
-                    scale: 0.97,
-                    transition: {
-                      type: spring,
-                      stiffness: 700,
-                      damping: 30,
-                      mass: 1,
-                    },
-                  }}
-                  onClick={() => navigate("/services")}
-                  className="px-8 py-3 md:px-10 md:py-4 text-lg rounded-2xl 
-                  bg-gradient-to-r from-[var(--color-dark)] to-[var(--color-accent)] text-surface
-                 shadow-lg opacity-90 hover:opacity-75 transition cursor-pointer"
-                >
+                <Button variant="secondary" className="w-fit">
                   Our Services
-                </motion.button>
+                </Button>
               </motion.div>
             </motion.div>
           )}
